@@ -4,7 +4,7 @@ document.getElementById('theCircle').addEventListener('click', function(){
 
 
 let star_speed = 0.005;
-let starAmount = 200;
+let starAmount = 100;
 let starSize = 0.005;
 let stars = [];
 let darkSpacePurple = "#3e0458a2";
