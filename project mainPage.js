@@ -1,10 +1,10 @@
 document.getElementById('theCircle').addEventListener('click', function(){
   document.getElementById('displacement').setAttribute('scale', '100');
 })
-
+ 
 
 let star_speed = 0.005;
-let starAmount = 100;
+let starAmount = 200;
 let starSize = 0.005;
 let stars = [];
 let darkSpacePurple = "#3e0458a2";
@@ -18,7 +18,7 @@ document.body.appendChild(canvas);
 
 let color_space = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
 color_space.addColorStop(0, "black");
-color_space.addColorStop(1, `${darkSpacePurple}`);
+color_space.addColorStop(1, `${darkSpacePurple}`); 
 let color_stars = "white";
 let timeDelta, timeLast = 0;
 let starSpeed = star_speed * canvas.width;
@@ -68,4 +68,4 @@ function loop(timeNow){
 
 function randomSign(){
     return Math.random() >= 0.5 ? 1 : -1;
-}
+} 
