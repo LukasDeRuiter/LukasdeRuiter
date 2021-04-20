@@ -2,7 +2,6 @@ document.getElementById('theCircle').addEventListener('click', function(){
   document.getElementById('displacement').setAttribute('scale', '100');
 })
  
-
 let star_speed = 0.005;
 let starAmount = 200;
 let starSize = 0.005;
@@ -69,3 +68,139 @@ function loop(timeNow){
 function randomSign(){
     return Math.random() >= 0.5 ? 1 : -1;
 } 
+
+let chosenPage = 0;
+let selected = false;
+let aboutMe = document.getElementById('aboutMeID');
+let portfolio = document.getElementById('portfolioID');
+let contact = document.getElementById('contactID');
+let notContainers = document.getElementById('notContainersID');
+
+document.getElementById('planet1ID').addEventListener('click', function(){
+    if(selected == false){
+    aboutMe.style.display = "grid";
+    aboutMe.style.animation = "appearing 2s 1";
+    aboutMe.onanimationend = function(){
+        aboutMe.style.display = "grid";
+    }
+    chosenPage = 1;
+    selected = true;
+    }
+
+    else if(chosenPage != 1 && selected == true){
+    aboutMe.style.display = "grid";
+    aboutMe.style.animation = "appearing 2s 1";
+    aboutMe.onanimationend = function(){
+        aboutMe.style.display = "grid";
+    }
+    portfolio.style.animation = "disappearing 1s 1";
+    portfolio.onanimationend = function(){
+        portfolio.style.display = "none";
+    }
+    contact.style.animation = "disappearing 1s 1";
+   contact.onanimationend = function(){
+       contact.style.display = "none";
+    }
+    chosenPage = 1;
+    }
+    else if(chosenPage == 1 && selected == true){
+        aboutMe.style.animation = "disappearing 1s 1";
+        aboutMe.onanimationend = function(){
+            aboutMe.style.display = "none";
+        }
+        portfolio.style.animation = "disappearing 1s 1";
+        portfolio.onanimationend = function(){
+            portfolio.style.display = "none";
+        }
+        contact.style.animation = "disappearing 1s 1";
+        contact.onanimationend = function(){
+            contact.style.display = "none";
+         }
+        selected = false;
+    }
+})
+
+document.getElementById('planet2ID').addEventListener('click', function(){
+    if(selected == false){
+        portfolio.style.display = "grid";
+        portfolio.style.animation = "appearing 2s 1";
+        portfolio.onanimationend = function(){
+            portfolio.style.display = "grid";
+        }
+        chosenPage = 2;
+        selected = true;
+        }
+        else if(chosenPage != 2 && selected == true){
+        portfolio.style.display = "grid";
+        portfolio.style.animation = "appearing 2s 1";
+        portfolio.onanimationend = function(){
+            portfolio.style.display = "grid";
+        }
+        aboutMe.style.animation = "disappearing 1s 1";
+        aboutMe.onanimationend = function(){
+            aboutMe.style.display = "none";
+        }
+        contact.style.animation = "disappearing 1s 1";
+        contact.onanimationend = function(){
+            contact.style.display = "none";
+         }
+        }
+        else if(chosenPage == 2 && selected == true){
+            aboutMe.style.animation = "disappearing 1s 1";
+            aboutMe.onanimationend = function(){
+                aboutMe.style.display = "none";
+            }
+            portfolio.style.animation = "disappearing 1s 1";
+            portfolio.onanimationend = function(){
+                portfolio.style.display = "none";
+            }
+            contact.style.animation = "disappearing 1s 1";
+            contact.onanimationend = function(){
+                contact.style.display = "none";
+             }
+            selected = false;
+        }
+})
+
+document.getElementById('planet3ID').addEventListener('click', function(){
+    if(selected == false){
+        contact.style.display = "grid";
+        contact.style.animation = "appearing 2s 1";
+        contact.onanimationend = function(){
+            contact.style.display = "grid";
+        }
+        chosenPage = 3;
+        selected = true;
+        }
+        else if(chosenPage != 3 && selected == true){
+        contact.style.display = "grid";
+        contact.style.animation = "appearing 2s 1";
+        contact.onanimationend = function(){
+            contact.style.display = "grid";
+        }
+        aboutMe.style.animation = "disappearing 1s 1";
+        aboutMe.onanimationend = function(){
+            aboutMe.style.display = "none";
+        }
+        portfolio.style.animation = "disappearing 1s 1";
+        portfolio.onanimationend = function(){
+            portfolio.style.display = "none";
+        }
+        chosenPage = 3;
+        }
+        else if(chosenPage == 3 && selected == true){
+            aboutMe.style.animation = "disappearing 1s 1";
+            aboutMe.onanimationend = function(){
+                aboutMe.style.display = "none";
+            }
+            portfolio.style.animation = "disappearing 1s 1";
+            portfolio.onanimationend = function(){
+                portfolio.style.display = "none";
+            }
+            contact.style.animation = "disappearing 1s 1";
+            contact.onanimationend = function(){
+                contact.style.display = "none";
+             }
+            selected = false;
+        }
+})
