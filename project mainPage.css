@@ -226,7 +226,7 @@
     text-align: left;
     overflow-y: scroll;
     grid-row-start: 1;
-    grid-row-end: 5;
+    grid-row-end: 6;
     grid-column-start: 2;
     grid-column-end: 3;
   }
@@ -253,12 +253,11 @@
 
   .portfolioContainer{
     display: none;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: repeat(5, 1fr);
+    flex-direction: column;
     background-color: rgba(255, 255, 255, 0.15);
     padding: 10px;
     position: absolute;
-    overflow: hidden;
+    overflow-y: scroll;
     width: 50vw;
     height: 70vh;
     left: 40vw;
@@ -269,21 +268,63 @@
     box-shadow: 0 0 40px rgb(33, 36, 228), 0 0 40px rgb(33, 36, 228);
   }
 
-  .portfolioContainer::before{
-    content: '';
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0.1), transparent);
-    transform: skewX(45deg);
-    transition: all 1.5s ease-in-out;
+  .projectContainer{
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(5, 1fr);
+    border: 3px solid gray;
+    border-radius: 12px;
   }
 
-  .portfolioContainer:hover::before{
+  .projectImg{
+    width: 90%;
+    height: auto;
+    margin: 5px;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .projectTitle{
+    color: white;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .projectText{
+    color: white;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .linkBtn{
     width: 40%;
+    margin-left: 30%;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 12px;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .projectLink{
+    width: 100%;
+    height: auto;
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
   }
 
   .contactContainer{

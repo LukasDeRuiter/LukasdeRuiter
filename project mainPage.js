@@ -122,19 +122,19 @@ document.getElementById('planet1ID').addEventListener('click', function(){
 
 document.getElementById('planet2ID').addEventListener('click', function(){
     if(selected == false){
-        portfolio.style.display = "grid";
+        portfolio.style.display = "flex";
         portfolio.style.animation = "appearing 2s 1";
         portfolio.onanimationend = function(){
-            portfolio.style.display = "grid";
+            portfolio.style.display = "flex";
         }
         chosenPage = 2;
         selected = true;
         }
         else if(chosenPage != 2 && selected == true){
-        portfolio.style.display = "grid";
+        portfolio.style.display = "flex";
         portfolio.style.animation = "appearing 2s 1";
         portfolio.onanimationend = function(){
-            portfolio.style.display = "grid";
+            portfolio.style.display = "flex";
         }
         aboutMe.style.animation = "disappearing 1s 1";
         aboutMe.onanimationend = function(){
