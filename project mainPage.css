@@ -187,8 +187,8 @@
     position: absolute;
     overflow: hidden;
     width: 60vw;
-    height: 70vh;
-    left: 40vw;
+    height: 75vh;
+    left: 35vw;
     top: 20vh;
     z-index: 5;
     border: 3px solid white;
@@ -259,8 +259,8 @@
     position: absolute;
     overflow-y: scroll;
     width: 60vw;
-    height: 70vh;
-    left: 40vw;
+    height: 75vh;
+    left: 35vw;
     top: 20vh;
     z-index: 5;
     border: 3px solid white;
@@ -336,8 +336,8 @@
     position: absolute;
     overflow: hidden;
     width: 60vw;
-    height: 70vh;
-    left: 40vw;
+    height: 75vh;
+    left: 35vw;
     top: 20vh;
     z-index: 5;
     border: 3px solid white;
