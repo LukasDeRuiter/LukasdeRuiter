@@ -186,7 +186,7 @@
     padding: 10px;
     position: absolute;
     overflow: hidden;
-    width: 50vw;
+    width: 60vw;
     height: 70vh;
     left: 40vw;
     top: 20vh;
@@ -258,7 +258,7 @@
     padding: 10px;
     position: absolute;
     overflow-y: scroll;
-    width: 50vw;
+    width: 60vw;
     height: 70vh;
     left: 40vw;
     top: 20vh;
@@ -335,7 +335,7 @@
     padding: 10px;
     position: absolute;
     overflow: hidden;
-    width: 50vw;
+    width: 60vw;
     height: 70vh;
     left: 40vw;
     top: 20vh;
