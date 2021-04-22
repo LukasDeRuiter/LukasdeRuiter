@@ -330,12 +330,12 @@
 
   .contactContainer{
     display: none;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: repeat(5, 1fr);
+    flex-direction: column;
     background-color: rgba(255, 255, 255, 0.15);
     padding: 10px;
     position: absolute;
     overflow: hidden;
+    text-align: center;
     width: 60vw;
     height: 75vh;
     left: 35vw;
@@ -361,6 +361,43 @@
 
   .contactContainer:hover::before{
     width: 40%;
+  }
+
+
+
+  .contactBtns{
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    z-index: 9;
+  }
+
+  /* social media icons */
+
+  .fab {
+    background-color: white;
+      padding: 20px;
+      font-size: 30px;
+      width: 30px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 10;
+  }
+
+  .fas {
+    background-color: white;
+      padding: 20px;
+      font-size: 30px;
+      width: 30px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 10;
   }
 
   .textBox{

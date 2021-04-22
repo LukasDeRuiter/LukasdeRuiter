@@ -164,19 +164,19 @@ document.getElementById('planet2ID').addEventListener('click', function(){
 
 document.getElementById('planet3ID').addEventListener('click', function(){
     if(selected == false){
-        contact.style.display = "grid";
+        contact.style.display = "flex";
         contact.style.animation = "appearing 2s 1";
         contact.onanimationend = function(){
-            contact.style.display = "grid";
+            contact.style.display = "flex";
         }
         chosenPage = 3;
         selected = true;
         }
         else if(chosenPage != 3 && selected == true){
-        contact.style.display = "grid";
+        contact.style.display = "flex";
         contact.style.animation = "appearing 2s 1";
         contact.onanimationend = function(){
-            contact.style.display = "grid";
+            contact.style.display = "flex";
         }
         aboutMe.style.animation = "disappearing 1s 1";
         aboutMe.onanimationend = function(){
