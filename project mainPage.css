@@ -435,3 +435,202 @@
     100%{opacity: 0;
       transform:translateY(500px);}
   }
+
+  @media screen and (max-width: 480px){
+
+
+    .innercircle1{
+      position: absolute;
+      background: linear-gradient(to top right, rgb(128, 10, 10) 30%, rgb(189, 30, 30) 50%, rgb(212, 155, 155) 80%);
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      left: 10vw;
+      height: 1vw;
+      width: 80px;
+      height: 80px;
+      z-index: 3;
+      border-radius: 50%;
+      overflow: hidden;
+      animation: noBobbing 30s ease-in-out infinite;
+      box-shadow: inset 0 0 30px black, 0 0 50px rgb(224, 37, 37), 0 0 100px rgb(255, 255, 255);
+    }
+    .innercircle2{
+      position: absolute;
+      background: linear-gradient(to top right, rgb(10, 22, 128) 30%, rgb(33, 36, 228) 50%, rgb(155, 156, 212) 80%);
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      left: 40vw;
+      height: 1vw;
+      width: 80px;
+      height: 80px;
+      z-index: 3;
+      border-radius: 50%;
+      overflow: hidden;
+      animation: noBobbing 30s ease-in-out infinite;
+      box-shadow: inset 0 0 50px black, 0 0 50px rgb(37, 65, 224), 0 0 100px rgb(255, 255, 255); 
+    }
+
+    .innercircle3{
+      position: absolute;
+      background: linear-gradient(to top right, rgb(128, 67, 10) 30%, rgb(189, 120, 30) 50%, rgb(212, 185, 155) 80%);
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      left: 70vw;
+      height: 1vw;
+      width: 80px;
+      height: 80px;
+      z-index: 3;
+      border-radius: 50%;
+      overflow: hidden;
+      animation: noBobbing 30s ease-in-out infinite;
+      box-shadow: inset 0 0 35px black, 0 0 50px rgb(224, 121, 37), 0 0 100px rgb(255, 255, 255); 
+      transition: all 2s;
+    }
+
+    .textBox{
+      width: 60%;
+      height: 40%;
+      color: white;
+      padding: 3px;
+      border-radius: 10px;
+      font-size: 0.8em;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    @keyframes noBobbing {
+      0%{transform: translateX(0)};
+      100%{transform: translateX(0)};
+    }
+
+    .moon{
+      position: absolute;
+      background-image: url(moonBackground.jpg);
+      width: 100vw;
+      height: 50vh;
+      top: 50vh;
+      left: 0vw;
+      z-index: 3;
+      border-radius: 50%;
+      border: 3px transparent black;
+      overflow: hidden;
+      animation: planetSpin 30s linear infinite alternate;
+      box-shadow: 0 0 80px 5px rgb(255, 254, 254), inset 0 0 80px 40px black;
+    }
+
+    .aboutMeContainer{
+      display: none;
+      grid-template-columns: 1fr 3fr;
+      grid-template-rows: repeat(5, 1fr);
+      background-color: rgba(255, 255, 255, 0.15);
+      padding: 5px;
+      position: absolute;
+      overflow: hidden;
+      width: 90vw;
+      height: 75vh;
+      left: 3vw;
+      top: 20vh;
+      z-index: 5;
+      border: 3px solid white;
+      border-radius: 12px;
+      box-shadow: 0 0 40px rgb(46, 170, 83), 0 0 40px rgb(46, 170, 83);
+    }
+
+    .portrait{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 4px solid white;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+
+    .portfolioContainer{
+      display: none;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.15);
+      padding: 5px;
+      position: absolute;
+      overflow-y: scroll;
+      width: 90vw;
+      height: 75vh;
+      left: 3vw;
+      top: 20vh;
+      z-index: 5;
+      border: 3px solid white;
+      border-radius: 12px;
+      box-shadow: 0 0 40px rgb(33, 36, 228), 0 0 40px rgb(33, 36, 228);
+    }
+
+    .contactContainer{
+      display: none;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.15);
+      padding: 5px;
+      position: absolute;
+      overflow: hidden;
+      text-align: center;
+      width: 90vw;
+      height: 75vh;
+      left: 3vw;
+      top: 20vh;
+      z-index: 5;
+      border: 3px solid white;
+      border-radius: 12px;
+      box-shadow: 0 0 40px rgb(189, 120, 30), 0 0 40px rgb(189, 120, 30);
+    }
+
+    .circle{
+      position: absolute;
+      top: 25%;
+      left: 20%;
+      width: 100px;
+      height: 100px;
+      filter: url(#wavy); 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .circle::before{
+      content: '';
+      position: absolute;
+      background-color: white;
+      width: 100px;
+      height: 100px;
+      top: 50%;
+      left: 50%;
+      border: 10px solid #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 50px #fff, inset 0 0 50px #fff,;
+      -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0002);
+      animation: animated 5s linear infinite;
+      z-index: 1;
+    }
+    
+    .circle::after{
+      content: '';
+      position: absolute;
+      background-color: white;
+      width: 100px;
+      height: 100px;
+      border: 10px solid #fff;
+      top: 50%;
+      left: 50%;
+      border-radius: 50%;
+      box-shadow: 0 0 50px #0f0, inset 0 0 50px #0f0;
+      z-index: 1;
+    }
+
+
+    
+
+
+  }
