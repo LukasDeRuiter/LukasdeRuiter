@@ -7,6 +7,8 @@
     margin: 0;
   }
 
+
+  /* star background  */
   canvas{
     position: absolute;
     left: 0;
@@ -14,6 +16,8 @@
     z-index: -1;
   }
 
+
+  /* Perlin noise circle   */
   .circle{
     position: absolute;
     top: 0%;
@@ -76,6 +80,8 @@
     height: 0;
   }
 
+
+  /* planets that can be tapped to show different pages */
   .innercircle1{
     position: absolute;
     background: linear-gradient(to top right, rgb(128, 10, 10) 30%, rgb(189, 30, 30) 50%, rgb(212, 155, 155) 80%);
@@ -145,18 +151,14 @@
     filter: hue-rotate(180deg);
   }
 
-
-  @keyframes planetSpin{
-    100%{background-position: 100%;
-      filter: hue-rotate(360deg);};
-  }
-
   @keyframes planetBob{
     0%{transform: translateY(0px);}
     50%{transform: translateY(75px);}
     100%{transform: translateY(0px);}
   }
+  
 
+  /* the big moon  */
   .moon{
     position: absolute;
     background-image: url(moonBackground.jpg);
@@ -172,6 +174,11 @@
     box-shadow: 0 0 80px 5px rgb(255, 254, 254), inset 0 0 80px 40px black;
   }
 
+  @keyframes planetSpin{
+    100%{background-position: 100%;
+      filter: hue-rotate(360deg);};
+  }
+
   /*.stars{
     position: absolute;
     border-radius: 50%;
@@ -179,6 +186,8 @@
     animation: shootingStars 45s linear infinite;
   } */
 
+
+  /* the different pages that appear when the innercircles are clicked  */
   .aboutMeContainer{
     display: none;
     grid-template-columns: 1fr 3fr;
@@ -436,8 +445,9 @@
       transform:translateY(500px);}
   }
 
-  @media screen and (max-width: 480px) and (orientation: portrait) {
 
+  /* mobile portrait use */
+  @media screen and (max-width: 480px) and (orientation: portrait) {
 
     .innercircle1{
       position: absolute;

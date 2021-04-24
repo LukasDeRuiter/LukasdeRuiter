@@ -1,7 +1,11 @@
+
+//click action on the perlin noise circle
 document.getElementById('theCircle').addEventListener('click', function(){
   document.getElementById('displacement').setAttribute('scale', '100');
 })
  
+
+//code for the star canvas that makes up the background
 let star_speed = 0.005;
 let starAmount = 200;
 let starSize = 0.005;
@@ -13,7 +17,6 @@ let ctx = canvas.getContext("2d");
 canvas.height = document.documentElement.clientHeight;
 canvas.width = document.documentElement.clientWidth;
 document.body.appendChild(canvas);
-
 
 let color_space = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
 color_space.addColorStop(0, "black");
@@ -69,6 +72,8 @@ function randomSign(){
     return Math.random() >= 0.5 ? 1 : -1;
 } 
 
+
+// functions for which page should be displayed when
 let chosenPage = 0;
 let selected = false;
 let aboutMe = document.getElementById('aboutMeID');
